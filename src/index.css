@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.quiz-modal .question-section {
+  margin-bottom: 20px;
+}
+
+.quiz-modal .question-count {
+  margin-bottom: 10px;
+}
+
+.quiz-modal .question-text {
+  font-size: 20px;
+}
+
+.quiz-modal .answer-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-modal .answer-section button:hover {
+  background-color: #0056b3;
+}
+
+.quiz-modal .score-section {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
