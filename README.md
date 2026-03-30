@@ -346,5 +346,3 @@ For issues or questions:
 ---
 
 **Built with ❤️ using Flask, React, and Transformers**
-
-# Study_Buddy
